@@ -305,3 +305,6 @@ td.rnd.win { color: var(--gold); font-weight: 700; }
   .hide-sm { display: none; }
   th, td { padding: 8px 8px; }
 }
+@media (max-width: 380px) {
+  .hide-xs { display: none; }
+}

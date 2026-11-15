@@ -345,7 +345,7 @@
     const half = 3 + Math.ceil((p.length - 3) / 2);
     let left = "", right = "";
     for (let i = 3; i < p.length; i++) (i < half ? (left += prow(i)) : (right += prow(i)));
-    right += `<div class="points-row bonus"><span>Pole <b>+${RULES.pole}</b></span><span class="divider"></span><span>Fastest lap <b>+${RULES.fastestLap}</b></span></div>`;
+    right += `<div class="points-row bonus"><span>Pole<span class="hide-xs"> Position</span> <b>+${RULES.pole}</b></span><span class="divider"></span><span>Fastest lap <b>+${RULES.fastestLap}</b></span></div>`;
     html += `<div class="points-grid"><div class="points-col">${left}</div><div class="points-col">${right}</div></div>`;
     if (RULES.tieBreaker) html += `<div class="callout"><h3>Tie-breaker</h3><p>${esc(RULES.tieBreaker)}</p></div>`;
     html += `<div class="section"><h2>Sporting regulations</h2>`;
