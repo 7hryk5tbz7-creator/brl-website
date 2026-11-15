@@ -216,7 +216,9 @@ td.rnd.win { color: var(--gold); font-weight: 700; }
   border-radius: 8px; padding: 8px 14px; font-size: 1.15rem;
 }
 .points-row b { color: var(--gold); font-family: "Barlow Condensed", sans-serif; font-size: 1.4rem; }
-.points-row.bonus { border: 1px solid var(--gold); border-left-width: 4px; border-left-color: var(--gold); }
+.points-row.bonus { border: 1px solid var(--gold); border-left-width: 4px; border-left-color: var(--gold); justify-content: space-around; }
+.points-row.bonus b { margin-left: 4px; }
+.points-row.bonus .divider { width: 1px; align-self: stretch; background: var(--gold); opacity: 0.6; }
 .callout {
   margin-top: 20px; padding: 16px 18px; border-radius: var(--radius);
   background: var(--tile); border: 1px solid var(--border);
